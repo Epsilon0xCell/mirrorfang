@@ -1,0 +1,6 @@
+{
+  "pair": "01-kerberoasting",
+  "title": "Kerberoasting RC4 Service Ticket Request",
+  "mapping": "T1558.003",
+  "category": "Active Directory"
+}

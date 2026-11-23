@@ -1,0 +1,17 @@
+title: Kerberoasting RC4 Service Ticket Request
+id: mirrorfang-01-kerberoasting
+status: test
+description: MIRRORFANG pair rule for 01-kerberoasting. Fires on the shipped attack log and must not fire on the shipped benign log.
+author: Gavin Blacklock
+logsource:
+  category: Active Directory
+detection:
+  selection:
+    EventID: 4769
+    TicketEncryptionType: "0x17"
+    ServiceName: "MSSQLSvc"
+  condition: selection
+level: high
+tags:
+  - mirrorfang.01-kerberoasting
+  - mapping.T1558.003

@@ -1,0 +1,17 @@
+title: MCP Tool Description Contains Instruction Marker
+id: mirrorfang-04-mcp-description-injection
+status: test
+description: MIRRORFANG pair rule for 04-mcp-description-injection. Fires on the shipped attack log and must not fire on the shipped benign log.
+author: Gavin Blacklock
+logsource:
+  category: AI and MCP
+detection:
+  selection:
+    Source: "mcp-proxy"
+    Event: "description_instruction_seen"
+    DescriptionMarker|contains: "CANARY_EXFIL"
+  condition: selection
+level: high
+tags:
+  - mirrorfang.04-mcp-description-injection
+  - mapping.MCP03

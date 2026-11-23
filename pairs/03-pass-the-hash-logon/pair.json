@@ -1,0 +1,6 @@
+{
+  "pair": "03-pass-the-hash-logon",
+  "title": "Pass The Hash Style NTLM Logon Type 9",
+  "mapping": "T1550.002",
+  "category": "Active Directory"
+}

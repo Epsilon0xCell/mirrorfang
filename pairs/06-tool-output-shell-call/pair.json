@@ -1,0 +1,6 @@
+{
+  "pair": "06-tool-output-shell-call",
+  "title": "Shell Tool Call With Tool Output Provenance",
+  "mapping": "LLM06",
+  "category": "AI and MCP"
+}

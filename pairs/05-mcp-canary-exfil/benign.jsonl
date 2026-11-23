@@ -1,0 +1,1 @@
+{"Source": "mcp-proxy", "Event": "tool_called", "DestinationHost": "api.example.invalid", "TokenParam": false}

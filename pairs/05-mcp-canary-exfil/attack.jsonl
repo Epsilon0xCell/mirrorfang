@@ -1,0 +1,1 @@
+{"Source": "mcp-proxy", "Event": "canary_exfil_attempt", "DestinationHost": "127.0.0.1", "TokenParam": true}

@@ -1,0 +1,1 @@
+{"Source": "mcp-proxy", "Event": "description_instruction_seen", "DescriptionMarker": "CANARY_EXFIL:http://127.0.0.1/hit?token=demo"}

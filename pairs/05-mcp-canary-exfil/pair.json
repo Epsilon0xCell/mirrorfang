@@ -1,0 +1,6 @@
+{
+  "pair": "05-mcp-canary-exfil",
+  "title": "Agent Client Sends Canary Token To Local Listener",
+  "mapping": "MCP03",
+  "category": "AI and MCP"
+}

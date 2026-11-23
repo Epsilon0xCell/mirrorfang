@@ -1,0 +1,17 @@
+title: Shell Tool Call With Tool Output Provenance
+id: mirrorfang-06-tool-output-shell-call
+status: test
+description: MIRRORFANG pair rule for 06-tool-output-shell-call. Fires on the shipped attack log and must not fire on the shipped benign log.
+author: Gavin Blacklock
+logsource:
+  category: AI and MCP
+detection:
+  selection:
+    Source: "agent-runtime"
+    ToolName: "shell_exec"
+    InstructionProvenance: "tool_output"
+  condition: selection
+level: high
+tags:
+  - mirrorfang.06-tool-output-shell-call
+  - mapping.LLM06

@@ -1,0 +1,17 @@
+title: Pass The Hash Style NTLM Logon Type 9
+id: mirrorfang-03-pass-the-hash-logon
+status: test
+description: MIRRORFANG pair rule for 03-pass-the-hash-logon. Fires on the shipped attack log and must not fire on the shipped benign log.
+author: Gavin Blacklock
+logsource:
+  category: Active Directory
+detection:
+  selection:
+    EventID: 4624
+    LogonType: 9
+    AuthenticationPackageName: "NTLM"
+  condition: selection
+level: high
+tags:
+  - mirrorfang.03-pass-the-hash-logon
+  - mapping.T1550.002

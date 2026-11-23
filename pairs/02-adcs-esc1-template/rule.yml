@@ -1,0 +1,17 @@
+title: AD CS ESC1 Template Request With SAN
+id: mirrorfang-02-adcs-esc1-template
+status: test
+description: MIRRORFANG pair rule for 02-adcs-esc1-template. Fires on the shipped attack log and must not fire on the shipped benign log.
+author: Gavin Blacklock
+logsource:
+  category: Active Directory
+detection:
+  selection:
+    EventID: 4886
+    CertificateTemplate: "WebServer-SAN"
+    SubjectAlternativeName|contains: "upn="
+  condition: selection
+level: high
+tags:
+  - mirrorfang.02-adcs-esc1-template
+  - mapping.T1649
